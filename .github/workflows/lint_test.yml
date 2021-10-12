@@ -17,11 +17,11 @@ jobs:
         with:
           python-version: '3.x'
       - name: Install dependencies
-          run: |
-            pip install poetry
-            make install
+        run: |
+          pip install poetry
+          make install
       - name: Lint with flake8
-          run: |
-            poetry add --dev flake8
-            make lint
+        run: |
+          poetry add --dev flake8
+          make lint
           
