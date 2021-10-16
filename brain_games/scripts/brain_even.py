@@ -1,4 +1,4 @@
-import brain_games.logic_game as logic
+import brain_games.games.even_game as logic
 
 
 def main():

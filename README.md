@@ -4,3 +4,4 @@
 [![Actions Status](https://github.com/SouthUral/python-project-lvl1/workflows/lint_test/badge.svg)](https://github.com/SouthUral/python-project-lvl1/actions)
 <!-- View the recording asciinema -->
 https://asciinema.org/a/MIdn30vBSC6yPsVBeQTHb3pb1
+https://asciinema.org/a/o4KMqmgPjftpMIUXuAFHMh9qd
