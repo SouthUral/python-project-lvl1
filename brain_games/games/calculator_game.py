@@ -4,10 +4,8 @@ import brain_games.general_logic as general_logic
 
 
 def main():
-    name = general_logic.greeting()
-    print('What is the result of the expression?')
-    value_bool = general_logic.logic_game(questions)
-    general_logic.end_game(name, value_bool)
+    txt_greet = 'What is the result of the expression?'
+    general_logic.enter_logic(txt_greet , questions)
 
 
 def random_operator():
