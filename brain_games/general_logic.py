@@ -4,7 +4,7 @@
 import prompt
 
 
-def enter_logic(greet:str, quest):
+def enter_logic(greet: str, quest):
     """Функция является связующей между логикой игр
        и основной логикой.
        Для использования функции нужно заполнить 2 аргумента

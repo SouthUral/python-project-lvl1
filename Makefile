@@ -28,3 +28,8 @@ brain-gcd:
 rec:
 	asciinema rec
 
+uninstall:
+	pip uninstall hexlet-code
+
+brain-progression:
+	poetry run brain-progression

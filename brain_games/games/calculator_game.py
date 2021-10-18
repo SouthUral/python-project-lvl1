@@ -5,7 +5,7 @@ import brain_games.general_logic as general_logic
 
 def main():
     txt_greet = 'What is the result of the expression?'
-    general_logic.enter_logic(txt_greet , questions)
+    general_logic.enter_logic(txt_greet, questions)
 
 
 def random_operator():
