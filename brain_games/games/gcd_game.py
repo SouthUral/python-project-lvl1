@@ -22,7 +22,7 @@ def gcd(nums_list):
 def questions():
     num_list = rundom_nums()
     try_answer = str(gcd(num_list))
-    quest_txt = f'{num_list[0]}, {num_list[1]}'
+    quest_txt = f'{num_list[0]} {num_list[1]}'
     return [quest_txt, try_answer]
 
 
