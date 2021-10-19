@@ -62,4 +62,4 @@ def end_game(name, bool_return):
     if bool_return is True:
         print(f'Congratulations, {name}!')
     else:
-        print(f"Let's try again, {name}")
+        print(f"Let's try again, {name}!")
