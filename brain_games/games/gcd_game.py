@@ -1,10 +1,9 @@
 import random
-import brain_games.general_logic as general_logic
 
 
-def main():
+def gcd_game():
     txt_greet = 'Find the greatest common divisor of given numbers.'
-    general_logic.enter_logic(txt_greet, questions)
+    return txt_greet, questions
 
 
 def gcd(nums_list):
@@ -30,7 +29,3 @@ def rundom_nums():
     num_1 = random.randint(1, 100)
     num_2 = random.randint(1, 100)
     return [num_1, num_2]
-
-
-if __name__ == '__main__':
-    main()

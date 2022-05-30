@@ -1,8 +1,9 @@
-import brain_games.games.even_game as logic
+from brain_games.games import even
+from brain_games.general_logic import enter_logic
 
 
 def main():
-    logic.main()
+    enter_logic(even)
 
 
 if __name__ == '__main__':

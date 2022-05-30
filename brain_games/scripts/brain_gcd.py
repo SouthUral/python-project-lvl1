@@ -1,8 +1,9 @@
-import brain_games.games.gcd_game as gcd_game
+from brain_games.games import gcd
+from brain_games.general_logic import enter_logic
 
 
 def main():
-    gcd_game.main()
+    enter_logic(gcd)
 
 
 if __name__ == '__main__':

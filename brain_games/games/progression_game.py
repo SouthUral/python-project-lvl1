@@ -1,11 +1,10 @@
 # логика игры "арифметическая прогрессия"
 import random
-import brain_games.general_logic as general_logic
 
 
-def main():
+def progression_game():
     txt_greet = 'What number is missing in the progression?'
-    general_logic.enter_logic(txt_greet, progress_generation)
+    return txt_greet, progress_generation
 
 
 # генерируем последовательность прогрессии
@@ -29,7 +28,3 @@ def progress_generation():
     quest_list[index_elem] = '..'
     quest_txt = ' '.join(quest_list)
     return [quest_txt, try_answer]
-
-
-if __name__ == '__main__':
-    main()

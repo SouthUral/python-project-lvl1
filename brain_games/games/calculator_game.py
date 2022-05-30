@@ -1,11 +1,10 @@
 # логика игры "калькулятор"
 import random
-import brain_games.general_logic as general_logic
 
 
-def main():
+def calculator_game():
     txt_greet = 'What is the result of the expression?'
-    general_logic.enter_logic(txt_greet, questions)
+    return txt_greet, questions
 
 
 def random_operator():
@@ -34,7 +33,3 @@ def questions():
         quest_txt = f'{number_2} {operator} {number_1}'
         try_answer = str(math_result(number_2, number_1, operator))
     return [quest_txt, try_answer]
-
-
-if __name__ == '__main__':
-    main()

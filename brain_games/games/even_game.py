@@ -1,13 +1,9 @@
 import random
-import brain_games.general_logic as general_logic
 
 
-def main():
+def even_game():
     txt_greet = 'Answer "yes" if the number is even, otherwise answer "no".'
-    # вызываем функцию, которая является точкой входа в основную логику
-    # на вход передаем текст с приветствием текущей игры, и функцию
-    # с логикой игры
-    general_logic.enter_logic(txt_greet, questions)
+    return txt_greet, questions
 
 
 def questions():
@@ -17,7 +13,3 @@ def questions():
     else:
         try_answer = 'no'
     return [number, try_answer]
-
-
-if __name__ == '__main__':
-    main()
