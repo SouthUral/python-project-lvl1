@@ -27,7 +27,9 @@
 
 ### asciinema installation and verification of the package
 <!-- [![asciicast](https://asciinema.org/a/498445.svg)](https://asciinema.org/a/498445) -->
+```javascript
 <script id="asciicast-498445" src="https://asciinema.org/a/498445.js" async></script>
+```
 
 ### brain-even
 [![asciicast](https://asciinema.org/a/498447.svg)](https://asciinema.org/a/498447)
