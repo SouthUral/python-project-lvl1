@@ -5,14 +5,6 @@ import random
 TXT_GREET = 'What number is missing in the progression?'
 
 
-def value_generator():
-    diff_const = random.randint(2, 8)
-    initial_element = random.randint(1, 60)
-    length_progression = random.randint(5, 10)
-    deleted_item_index = random.randint(0, length_progression - 1)
-    return diff_const, initial_element, length_progression, deleted_item_index
-
-
 # генерируем последовательность прогрессии
 def gen_list(init_elem, step, length):
     prog_list = [init_elem, ]
@@ -32,7 +24,10 @@ def progress_generation(item_index, prog_list):
 
 
 def give_question_answer():
-    diff_const, init_element, len_prog, del_item_index = value_generator()
+    diff_const = random.randint(2, 8)
+    init_element = random.randint(1, 60)
+    len_prog = random.randint(5, 10)
+    del_item_index = random.randint(0, len_prog - 1)
     progression_list = gen_list(init_element, diff_const, len_prog)
     quest, answer = progress_generation(del_item_index, progression_list)
     return quest, answer
