@@ -1,9 +1,9 @@
-from brain_games.games import progression
-from brain_games.general_logic import enter_logic
+from brain_games.games import progression_game
+from brain_games import general_logic as general
 
 
 def main():
-    enter_logic(progression)
+    general.enter_logic(progression_game, general.COUNT_ROUNDS)
 
 
 if __name__ == '__main__':

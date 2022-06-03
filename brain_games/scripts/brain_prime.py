@@ -1,9 +1,9 @@
-from brain_games.games import prime
-from brain_games.general_logic import enter_logic
+from brain_games.games import prime_game
+from brain_games import general_logic as general
 
 
 def main():
-    enter_logic(prime)
+    general.enter_logic(prime_game, general.COUNT_ROUNDS)
 
 
 if __name__ == '__main__':

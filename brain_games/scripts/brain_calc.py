@@ -1,9 +1,9 @@
-from brain_games.games import calc
-from brain_games.general_logic import enter_logic
+from brain_games.games import calculator_game
+from brain_games import general_logic as general
 
 
 def main():
-    enter_logic(calc)
+    general.enter_logic(calculator_game, general.COUNT_ROUNDS)
 
 
 if __name__ == '__main__':

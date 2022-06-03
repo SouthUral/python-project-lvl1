@@ -2,19 +2,22 @@
 import prompt
 
 
-def enter_logic(quest):
+COUNT_ROUNDS = 3
+
+
+def enter_logic(quest, rounds):
     """Функция является связующей между логикой игр
        и основной логикой.
        quest - получает функцию с логикой игры, эта функция должна
        вернуть условие задачи в текстовом формате, и правильный ответ
     """
-    greet_game, task = quest()
+    greet_game = quest.TXT_GREET
     print('Welcome to the Brain Games!')
     name = prompt.string('May I have your name? ')
     print(f'Hello {name}')
     print(greet_game)
-    for i in range(3):
-        question, try_answer = task()
+    for i in range(rounds):
+        question, try_answer = quest.give_question_answer()
         print(f'Question: {question}')
         answer_user = prompt.string('Your answer: ')
         if answer_user != try_answer:
