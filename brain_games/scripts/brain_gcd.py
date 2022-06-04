@@ -1,9 +1,9 @@
-from brain_games.games import gcd_game
+from brain_games.games import gcd
 from brain_games import general_logic as general
 
 
 def main():
-    general.enter_logic(gcd_game, general.COUNT_ROUNDS)
+    general.starting_game(gcd, general.ROUNDS_COUNT)
 
 
 if __name__ == '__main__':

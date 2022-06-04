@@ -1,5 +1,5 @@
-from . import even_game        # noqa
-from . import calculator_game  # noqa
-from . import gcd_game         # noqa
-from . import prime_game       # noqa
-from . import progression_game # noqa
+from . import even        # noqa
+from . import calculator  # noqa
+from . import gcd         # noqa
+from . import prime       # noqa
+from . import progression # noqa
