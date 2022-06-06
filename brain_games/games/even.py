@@ -1,9 +1,9 @@
 import random
 
 
-TXT_GREET = 'Answer "yes" if the number is even, otherwise answer "no".'
-START_RANDINT = 1
-END_RANDINT = 100
+RULES = 'Answer "yes" if the number is even, otherwise answer "no".'
+LOWER_BOUND = 1
+UPPER_BOUND = 100
 
 
 def is_even(num):
@@ -11,7 +11,7 @@ def is_even(num):
 
 
 def get_question_answer():
-    number = random.randint(START_RANDINT, END_RANDINT)
+    number = random.randint(LOWER_BOUND, UPPER_BOUND)
     if is_even(number):
         try_answer = 'yes'
     else:

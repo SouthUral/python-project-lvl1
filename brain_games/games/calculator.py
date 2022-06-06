@@ -2,9 +2,9 @@
 import random
 
 
-TXT_GREET = 'What is the result of the expression?'
-START_RANDINT = 1
-END_RANDINT = 100
+RULES = 'What is the result of the expression?'
+LOWER_BOUND = 1
+UPPER_BOUND = 100
 
 
 def get_math_result(num_1, num_2, oper):
@@ -18,8 +18,8 @@ def get_math_result(num_1, num_2, oper):
 
 def get_question_answer():
     numbers = [
-        random.randint(START_RANDINT, END_RANDINT),
-        random.randint(START_RANDINT, END_RANDINT)
+        random.randint(LOWER_BOUND, UPPER_BOUND),
+        random.randint(LOWER_BOUND, UPPER_BOUND)
     ]
     numbers.sort(reverse=True)
     operator = random.choice(['+', '-', '*'])

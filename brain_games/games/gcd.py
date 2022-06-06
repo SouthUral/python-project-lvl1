@@ -1,9 +1,9 @@
 import random
 
 
-TXT_GREET = 'Find the greatest common divisor of given numbers.'
-START_RANDINT = 1
-END_RANDINT = 100
+RULES = 'Find the greatest common divisor of given numbers.'
+LOWER_BOUND = 1
+UPPER_BOUND = 100
 
 
 def gcd(num_1, num_2):
@@ -17,8 +17,8 @@ def gcd(num_1, num_2):
 
 def get_question_answer():
     num_list = [
-        random.randint(START_RANDINT, END_RANDINT),
-        random.randint(START_RANDINT, END_RANDINT)
+        random.randint(LOWER_BOUND, UPPER_BOUND),
+        random.randint(LOWER_BOUND, UPPER_BOUND)
     ]
     num_list.sort()
     try_answer = str(gcd(*num_list))

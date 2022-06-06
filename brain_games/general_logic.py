@@ -11,11 +11,11 @@ def starting_game(game, number_of_rounds):
        quest - получает функцию с логикой игры, эта функция должна
        вернуть условие задачи в текстовом формате, и правильный ответ
     """
-    greet_game = game.TXT_GREET
+    rules_game = game.RULES
     print('Welcome to the Brain Games!')
     name = prompt.string('May I have your name? ')
     print(f'Hello {name}')
-    print(greet_game)
+    print(rules_game)
     for i in range(number_of_rounds):
         question, try_answer = game.get_question_answer()
         print(f'Question: {question}')

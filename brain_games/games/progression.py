@@ -1,16 +1,16 @@
 import random
 
 
-TXT_GREET = 'What number is missing in the progression?'
-START_DIFF_CONST = 2
-END_DIFF_CONST = 8
-START_INIT_ELEMENT = 1
-END_INIT_ELEMENT = 60
-START_LEN_PROG = 5
-END_LEN_PROG = 10
+RULES = 'What number is missing in the progression?'
+LOWER_BOUND_DIFF = 2
+UPPER_BOUND_DIFF = 8
+LOWER_BOUND_INIT = 1
+UPPER_BOUND_INIT = 60
+LOWER_BOUND_LEN = 5
+UPPER_BOUND_LEN = 10
 
 
-def int_progress_generation(init_elem, step, length):
+def make_progression(init_elem, step, length):
     progress_list = [init_elem, ]
     for i in range(length - 1):
         prev = progress_list[-1]
@@ -27,10 +27,10 @@ def make_progress_str_try_answer(item_index, prog_list):
 
 
 def get_question_answer():
-    diff_const = random.randint(START_DIFF_CONST, END_DIFF_CONST)
-    init_element = random.randint(START_INIT_ELEMENT, END_INIT_ELEMENT)
-    len_prog = random.randint(START_LEN_PROG, END_LEN_PROG)
+    diff_const = random.randint(LOWER_BOUND_DIFF, UPPER_BOUND_DIFF)
+    init_element = random.randint(LOWER_BOUND_INIT, UPPER_BOUND_INIT)
+    len_prog = random.randint(LOWER_BOUND_LEN, UPPER_BOUND_LEN)
     del_item_index = random.randint(0, len_prog - 1)
-    progress_list = int_progress_generation(init_element, diff_const, len_prog)
+    progress_list = make_progression(init_element, diff_const, len_prog)
     quest, answer = make_progress_str_try_answer(del_item_index, progress_list)
     return quest, answer
