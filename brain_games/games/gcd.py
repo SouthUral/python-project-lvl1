@@ -6,13 +6,10 @@ LOWER_BOUND = 1
 UPPER_BOUND = 100
 
 
-def gcd(num_1, num_2):
-    div_list = [i for i in range(1, num_1 + 1)]
-    general_div_list = []
-    for n in div_list:
-        if num_1 % n == 0 and num_2 % n == 0:
-            general_div_list.append(n)
-    return max(general_div_list)
+def gcd(a, b):
+    while b > 0:
+        a, b = b, a%b
+    return a
 
 
 def get_question_answer():
