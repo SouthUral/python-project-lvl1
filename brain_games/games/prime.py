@@ -20,6 +20,6 @@ def is_prime(num):
 
 def get_question_answer():
     quest_num = random.randint(LOWER_BOUND, UPPER_BOUND)
-    try_answer = check_prime(quest_num)
+    correct_answer = check_prime(quest_num)
     quest_txt = str(quest_num)
-    return quest_txt, try_answer
+    return quest_txt, correct_answer

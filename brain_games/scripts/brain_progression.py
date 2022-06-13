@@ -3,7 +3,7 @@ from brain_games import general_logic as general
 
 
 def main():
-    general.starting_game(progression, general.ROUNDS_COUNT)
+    general.game_engine(progression, general.ROUNDS_COUNT)
 
 
 if __name__ == '__main__':

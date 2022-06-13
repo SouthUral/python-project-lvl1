@@ -5,23 +5,23 @@ import prompt
 ROUNDS_COUNT = 3
 
 
-def starting_game(game, number_of_rounds):
+def game_engine(game, number_of_rounds):
     """Функция является связующей между логикой игр
        и основной логикой.
        quest - получает функцию с логикой игры, эта функция должна
        вернуть условие задачи в текстовом формате, и правильный ответ
     """
-    rules_game = game.RULES
+    game_rules = game.RULES
     print('Welcome to the Brain Games!')
     name = prompt.string('May I have your name? ')
     print(f'Hello {name}')
-    print(rules_game)
+    print(game_rules)
     for i in range(number_of_rounds):
-        question, try_answer = game.get_question_answer()
+        question, correct_answer = game.get_question_answer()
         print(f'Question: {question}')
-        answer_user = prompt.string('Your answer: ')
-        if answer_user != try_answer:
-            a_s = f"'{answer_user}' is wrong answer ;(. Correct answer was '{try_answer}'." # noqa
+        user_answer = prompt.string('Your answer: ')
+        if user_answer != correct_answer:
+            a_s = f"'{user_answer}' is wrong answer ;(. Correct answer was '{correct_answer}'." # noqa
             print(a_s)
             print(f"Let's try again, {name}!")
             return
